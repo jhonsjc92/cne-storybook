@@ -1,15 +1,14 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { DxButtonModule } from 'devextreme-angular/ui/button';
-
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-cne-buttons',
+  templateUrl: './cne-buttons.component.html',
+
+  styleUrls: ['./cne-buttons.component.css']
 })
-export class AppComponent {
-  title = 'cneStoryBook';
-  /**
+
+export class CneButtonsComponent {
+ /**
    * Is this the principal call to action on the page?
    */
  @Input()
