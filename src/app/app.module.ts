@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DxButtonModule } from 'devextreme-angular';
+import { CneButtonModule } from 'projects/cne-material/src/lib/cne-button/cne-button.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { DxButtonModule } from 'devextreme-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DxButtonModule
+    CneButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

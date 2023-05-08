@@ -1,0 +1,17 @@
+
+.dx-button-mode-contained.dx-state-hover{
+    background-color: #0e7fc0;
+    border-color: #4c8db5;
+    color: #f9f7f7;
+}
+.cne-button-primary{
+    background-color: #2c94d1;
+    border-color: #4c8db5;
+    color: #f9f7f7;
+}
+
+.cne-button-secondary{
+    background-color: #d7d4d8;
+    border-color: #d7d4d8;
+    color: #302e2e;
+}
