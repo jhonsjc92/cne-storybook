@@ -31,21 +31,14 @@ type Story = StoryObj<CneTextBoxComponent>;
 
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Primary: Story = {
-  argTypes: {
-    idButton: {
-      options: [1, 2, 3, 4],
-      control: 'select',
-    }
-  },
+  
   args: {
-    typeButton: 'primary',
-    idButton: 1
+  
   },
 };
 
 export const Secondary: Story = {
   args: {
-    typeButton: 'secondary',
-    idButton: 2
+ 
   },
 };
