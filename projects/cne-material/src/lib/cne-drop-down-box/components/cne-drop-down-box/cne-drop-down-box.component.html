@@ -1,0 +1,4 @@
+<dx-drop-down-box [(value)]="selectedFruit" [dataSource]="dataSource" [(opened)]="isDropDownBoxOpened" >
+    <dx-list [dataSource]="dataSource" selectionMode="single" (onSelectionChanged)="changeDropDownBoxValue($event)">
+    </dx-list>
+</dx-drop-down-box>

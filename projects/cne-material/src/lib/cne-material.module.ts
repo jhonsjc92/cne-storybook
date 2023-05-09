@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CneMaterialComponent } from './cne-material.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -8,6 +9,7 @@ import { CneMaterialComponent } from './cne-material.component';
     CneMaterialComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
     CneMaterialComponent

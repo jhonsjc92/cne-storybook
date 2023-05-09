@@ -8,12 +8,17 @@ import { CneButton } from '../../interfaces/cne-button.interfaces';
 })
 export class CneButtonComponent implements OnInit {
   ngOnInit(): void {
+    console.log("inicio el comand")
     this.selectedAttributeButton = this.attributeButton.filter(res => res.idButton === this.idButton)[0];
   }
+  @Input()
+  backgroundColor?: string;
 
   @Input()
-  public idButton: number = 1;
-  public selectedAttributeButton: CneButton = { text: '', icon: '', idButton: 0 };
+  public idButton: number = 5;
+
+  public selectedAttributeButton?: CneButton = { text: '', icon: '', idButton: 0 };
+
   public attributeButton: CneButton[] = [{
     idButton: 1,
     text: "Guardar",
@@ -45,15 +50,24 @@ export class CneButtonComponent implements OnInit {
   sizeButton: 'small' | 'medium' | 'large' = 'medium';
 
   @Output()
-  c_onClick = new EventEmitter<any>();
+  public c_onClick: any = new EventEmitter<any>();
 
   onClick(event: any) {
     console.log("hola")
-    this.c_onClick.emit(event);
+    this.c_onClick?.emit(event);
   }
 
-  public get classes(): string {
+  public get classes(): string | undefined {
     const mode = this.typeButton === 'primary' ? 'cne-button-primary' : 'cne-button-secondary';
     return mode;
+  }
+
+  public get getText(): string | undefined{
+    this.selectedAttributeButton = this.attributeButton.filter(res => res.idButton == this.idButton)[0];
+    return this.selectedAttributeButton?.text;
+  }
+  public get getIcon(): string | undefined{
+    this.selectedAttributeButton = this.attributeButton.filter(res => res.idButton == this.idButton)[0];
+    return this.selectedAttributeButton?.icon;
   }
 }

@@ -1,0 +1,10 @@
+<dx-drop-down-button
+        [splitButton]="true"
+        [useSelectMode]="false"
+        text="Jose Criollo"
+        [items]="dataSource"
+        displayExpr="name"
+        keyExpr="id"
+        (onButtonClick)="onButtonClick($event)"
+        (onItemClick)="onItemClick($event)"
+      ></dx-drop-down-button>
