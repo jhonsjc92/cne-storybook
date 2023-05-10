@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CneButtonModule } from 'projects/cne-material/src/lib/cne-button/cne-button.module';
+import { CneTextBoxModule } from 'projects/cne-material/src/lib/cne-text-box/cne-text-box.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { CneButtonModule } from 'projects/cne-material/src/lib/cne-button/cne-bu
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CneButtonModule
+    CneButtonModule,
+    CneTextBoxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

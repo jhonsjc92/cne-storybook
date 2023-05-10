@@ -1,2 +1,5 @@
-<dx-text-box  [mode]="mode">
+<dx-text-box [mode]="mode" [label]="label" labelMode="floating" [maxLength]="maxLength" [showClearButton]="true"
+    (onEnterKey)="onEnterKey?.emit($event)" (onValueChanged)="onValueChanged?.emit($event)" [value]="value" (onKeyDown)="onKeyDown?.emit($event)"
+    (onKeyUp)="onKeyUp?.emit($event)" [mask]="mask"  maskInvalidMessage="El valor de entrada no coincide con la máscara" [name]="name" [id]="name" [readOnly]="readOnly"
+    >
 </dx-text-box>
